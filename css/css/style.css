@@ -1,0 +1,376 @@
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 54px;
+
+}
+
+/* navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    /* overflow: hidden; */
+    justify-content: space-around;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+}
+
+/* navigation bar: logo and image  */
+#logo {
+    margin: 20px 15px;
+    padding: 15px;
+    border: solid black;
+    border-radius: 3px;
+
+}
+
+#logo img {
+    height: 40px;
+    width: 40px;
+}
+
+/*navigation bar: list styling */
+
+
+#navbar ul {
+    display: flex;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+
+
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+    color: aliceblue;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+
+
+}
+
+#search input[type=text] {
+    color: rgb(16, 44, 1);
+    display: block;
+    padding: 3px 20px;
+    border-radius: 35px;
+    font-family:'Merriweather', serif ;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+#search input:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid white;
+
+}
+#navbar ul li a:hover {
+    color: black;
+    background-color: antiquewhite;
+
+}
+
+/* home and section 
+ */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 34px;
+    justify-content: center;
+    align-items: center;
+    height: 595px;
+}
+
+#home::before {
+    content: "";
+    background: url('/bg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+#home h1 {
+    color: rgb(42, 18, 74);
+    text-align: center;
+}
+
+#home p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Kalnia', serif;
+    font-weight: 600;
+}
+#home button a {
+    color: aliceblue;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+
+
+}
+
+/* #home:hover{
+    background-color: rgb(205, 215, 140);
+
+ } */
+/* hovering over the home style was my try and it worked  */
+/* button styling */
+
+/* services section */
+.services-container{
+    margin-bottom: 50px;
+}
+#services {
+    margin: 10px;
+    display: flex;
+}
+
+#services .box {
+    border: 5px solid rgba(72, 11, 11, 0.986);
+    padding: 25px;
+    margin: 2px 5px;
+    border-radius: 60px;
+    background-color: #d8dbde;
+    flex-basis: 400px;
+}
+
+#services .box img {
+    height: 125px;
+    margin: auto;
+    display: block;
+}
+
+
+#services .box p {
+    font-family: 'Merriweather', serif;
+
+
+}
+
+/* #services{} this was not so beneficial in use but is a sign of using services id to target an element in this css code  */
+/* clients section  */
+#client-section {
+    height: 240px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('/bg2.jpeg');
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients img {
+    height: 150px;
+    padding: 5px;
+    border:2px solid #080808;
+    border-radius:2px ;
+    margin: 2px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+/* contact section  */
+/* #contact {
+    position: relative;
+    padding: 1px;
+    border: black 2px solid;
+    margin: 12px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('/contact.jpeg') no-repeat center center/cover;
+    opacity: .7;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+    font-family: 'Merriweather', serif;
+}
+
+#contact-box form {
+    width: 35%;
+
+}
+
+#contact-box label {
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+
+}
+.form-group button{
+    margin-left: 15vw;
+}
+.form-error{
+    color: red;
+} */
+
+/* this section of design is for the another induced style for contact section from the source of code with harry  */
+#contact {
+    position: relative;
+    padding: 10px;
+    border: black 2px solid;
+    margin: 30px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('/contact.jpeg') no-repeat center center/cover;
+    opacity: .7;
+
+}
+#contact span,
+#contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+    font-family: 'Merriweather', serif;
+}
+.formdesign {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.formdesign input {
+    width: 50%;
+    padding: 12px 20px;
+    border: 1px solid blue;
+    margin: 14px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.formerror {
+    color: rgb(240, 86, 86);
+}
+
+.but {
+    border-radius: 9px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    margin: 22px 20px;
+}
+
+/* footer styling */
+
+footer {
+    background: black;
+    color: aliceblue;
+    padding: 10px 20px;
+}
+
+/* utility class */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 5px;
+    font-family: 'Merriweather', serif;
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+
+}
+
+.btn {
+    padding: 4px 10px;
+    border: 5px solid red;
+    background-color: #dd8181c2;
+    color: #181716;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'Kalnia', serif;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: coral;
+    color: azure;
+}
+
+.center {
+    text-align: center;
+}

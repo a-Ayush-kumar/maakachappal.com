@@ -1,0 +1,23 @@
+p{
+    background-color: blueviolet;
+}
+h1{
+    background-color: aqua;
+    align-content: center;
+    align-self: center;
+    border: solid 10px ;
+    margin: 2px;
+}
+body{
+    text-align: center;
+    background-color: rgb(251, 200, 132);
+}
+img{
+    border:dotted 6px;
+    border-color: brown;
+
+    size: 50px;
+}
+a{
+    text-decoration: none;
+}

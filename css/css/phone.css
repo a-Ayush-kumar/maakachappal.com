@@ -1,0 +1,37 @@
+/* this css is prepared to make the site responsive and i am pretty sure and also is working. */
+/* navigation bar  */
+#navbar{
+    flex-direction: column;
+
+}
+/* #navbar ul{
+    flex-direction: column;
+} */
+/* home section  */
+#home{
+    height: 280px;
+}
+#home::before{
+    height:900px;
+}
+/* services section  */
+#services {
+    flex-direction: column;
+}
+
+/* client section  */
+#clients{
+    overflow: hidden;
+}
+
+/* contact us section  */
+
+/* footer  */
+/* utility classes */
+.h-primary{
+    font-size: 25px;
+}
+/* this body style is just for the satisfaction whether the code is working or not  */
+body{
+    background: navy;
+}
